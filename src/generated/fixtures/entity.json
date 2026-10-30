@@ -1,0 +1,137 @@
+[
+    {
+        "entity_name": "state",
+        "description": "State in the India Vision geography",
+        "fields": [
+            {
+                "field_name": "state_id",
+                "field_data_type": "AutoPK",
+                "attributes": {}
+            },
+            {
+                "field_name": "name",
+                "field_data_type": "CharacterString",
+                "attributes": {}
+            }
+        ]
+    },
+    {
+        "entity_name": "district",
+        "description": "District used as the row scope for workers",
+        "fields": [
+            {
+                "field_name": "district_id",
+                "field_data_type": "AutoPK",
+                "attributes": {}
+            },
+            {
+                "field_name": "name",
+                "field_data_type": "CharacterString",
+                "attributes": {}
+            },
+            {
+                "field_name": "state_id",
+                "field_data_type": "FK",
+                "attributes": {
+                    "target_entity": "state",
+                    "join_column": "state_id"
+                }
+            }
+        ]
+    },
+    {
+        "entity_name": "organisation",
+        "description": "Contracting organisation, training partner, or assessment agency",
+        "fields": [
+            {
+                "field_name": "organisation_id",
+                "field_data_type": "AutoPK",
+                "attributes": {}
+            },
+            {
+                "field_name": "status",
+                "field_data_type": "CharacterString",
+                "attributes": {}
+            },
+            {
+                "field_name": "organisation_type",
+                "field_data_type": "CharacterString",
+                "attributes": {}
+            },
+            {
+                "field_name": "legal_name",
+                "field_data_type": "CharacterString",
+                "attributes": {}
+            }
+        ]
+    },
+    {
+        "entity_name": "worker",
+        "description": "Enrolled worker, scoped by district",
+        "fields": [
+            {
+                "field_name": "worker_id",
+                "field_data_type": "AutoPK",
+                "attributes": {}
+            },
+            {
+                "field_name": "full_name",
+                "field_data_type": "CharacterString",
+                "attributes": {}
+            },
+            {
+                "field_name": "district_id",
+                "field_data_type": "FK",
+                "attributes": {
+                    "target_entity": "district",
+                    "join_column": "district_id"
+                }
+            },
+            {
+                "field_name": "organisation_id",
+                "field_data_type": "FK",
+                "attributes": {
+                    "target_entity": "organisation",
+                    "join_column": "organisation_id"
+                }
+            }
+        ]
+    },
+    {
+        "entity_name": "batch",
+        "description": "Training batch, scoped by training partner organisation",
+        "fields": [
+            {
+                "field_name": "batch_id",
+                "field_data_type": "AutoPK",
+                "attributes": {}
+            },
+            {
+                "field_name": "batch_name",
+                "field_data_type": "CharacterString",
+                "attributes": {}
+            },
+            {
+                "field_name": "status",
+                "field_data_type": "CharacterString",
+                "attributes": {}
+            },
+            {
+                "field_name": "district_id",
+                "field_data_type": "FK",
+                "attributes": {
+                    "target_entity": "district",
+                    "join_column": "district_id"
+                }
+            },
+            {
+                "field_name": "organisation_id",
+                "field_data_type": "FK",
+                "attributes": {
+                    "target_entity": "organisation",
+                    "join_column": "organisation_id"
+                }
+            }
+        ]
+    }
+]
