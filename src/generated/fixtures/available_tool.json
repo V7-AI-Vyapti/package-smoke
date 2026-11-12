@@ -1,0 +1,96 @@
+[
+    {
+        "configured_tool_name": "employee_csv_ingest",
+        "description": "",
+        "tool_type_name": "file_ingest_protocol",
+        "api_endpoint": {
+            "api_endpoint_name": "employee_csv_ingest_trigger",
+            "api_endpoint_path": "/files/ingest/employee-csv-ingest",
+            "api_method_type": "post",
+            "api_content_type": "application/json"
+        },
+        "target_entity_name": "district",
+        "additional_json_data": {
+            "source_file_format_name": "CSV",
+            "target_entity_name": "district"
+        }
+    },
+    {
+        "configured_tool_name": "asset_csv_ingest",
+        "description": null,
+        "tool_type_name": "file_ingest_protocol",
+        "api_endpoint": {
+            "api_endpoint_name": "asset_csv_ingest_trigger",
+            "api_endpoint_path": "/files/ingest/asset-csv-ingest",
+            "api_method_type": "post",
+            "api_content_type": "application/json"
+        },
+        "target_entity_name": "organisation",
+        "additional_json_data": {
+            "source_file_format_name": "CSV",
+            "target_entity_name": "organisation"
+        }
+    },
+    {
+        "configured_tool_name": "counted_item_csv_ingest",
+        "description": null,
+        "tool_type_name": "file_ingest_protocol",
+        "api_endpoint": {
+            "api_endpoint_name": "counted_item_csv_ingest_trigger",
+            "api_endpoint_path": "/files/ingest/counted-item-csv-ingest",
+            "api_method_type": "post",
+            "api_content_type": "application/json"
+        },
+        "target_entity_name": "worker",
+        "additional_json_data": {
+            "source_file_format_name": "CSV",
+            "target_entity_name": "worker"
+        }
+    },
+    {
+        "configured_tool_name": "assignment_csv_ingest",
+        "description": null,
+        "tool_type_name": "file_ingest_protocol",
+        "api_endpoint": {
+            "api_endpoint_name": "assignment_csv_ingest_trigger",
+            "api_endpoint_path": "/files/ingest/assignment-csv-ingest",
+            "api_method_type": "post",
+            "api_content_type": "application/json"
+        },
+        "target_entity_name": "batch",
+        "additional_json_data": {
+            "source_file_format_name": "CSV",
+            "target_entity_name": "batch"
+        }
+    },
+    {
+        "configured_tool_name": "excel_to_csv_xls",
+        "description": "Convert XLS workbook to CSV",
+        "tool_type_name": "file_management",
+        "api_endpoint": {
+            "api_endpoint_name": "excel_to_csv_xls_trigger",
+            "api_endpoint_path": "/files/:fileId/tools/excel-to-csv",
+            "api_method_type": "post",
+            "api_content_type": "application/json"
+        },
+        "target_entity_name": null,
+        "additional_json_data": {
+            "source_file_format_name": "XLS"
+        }
+    },
+    {
+        "configured_tool_name": "excel_to_csv_xlsx",
+        "description": "Convert XLSX workbook to CSV",
+        "tool_type_name": "file_management",
+        "api_endpoint": {
+            "api_endpoint_name": "excel_to_csv_xlsx_trigger",
+            "api_endpoint_path": "/files/:fileId/tools/excel-to-csv",
+            "api_method_type": "post",
+            "api_content_type": "application/json"
+        },
+        "target_entity_name": null,
+        "additional_json_data": {
+            "source_file_format_name": "XLSX"
+        }
+    }
+]

@@ -1,0 +1,191 @@
+{
+    "entity_name": "form_field_template",
+    "rows": [
+        {
+            "template_id": "full_name",
+            "title": "Full name",
+            "field": {
+                "key": "full_name",
+                "label": "Full name",
+                "widget": "text",
+                "required": true,
+                "enabled": true,
+                "optionSource": "static",
+                "options": []
+            }
+        },
+        {
+            "template_id": "phone",
+            "title": "Phone",
+            "field": {
+                "key": "phone",
+                "label": "Phone",
+                "widget": "text",
+                "required": true,
+                "enabled": true,
+                "optionSource": "static",
+                "options": []
+            }
+        },
+        {
+            "template_id": "email",
+            "title": "Email",
+            "field": {
+                "key": "email",
+                "label": "Email",
+                "widget": "text",
+                "required": true,
+                "enabled": true,
+                "optionSource": "static",
+                "options": []
+            }
+        },
+        {
+            "template_id": "date_of_birth",
+            "title": "Date of birth",
+            "field": {
+                "key": "date_of_birth",
+                "label": "Date of birth",
+                "widget": "date",
+                "required": false,
+                "enabled": true,
+                "optionSource": "static",
+                "options": []
+            }
+        },
+        {
+            "template_id": "gender",
+            "title": "Gender",
+            "field": {
+                "key": "gender",
+                "label": "Gender",
+                "widget": "select",
+                "required": false,
+                "enabled": true,
+                "optionSource": "static",
+                "options": [
+                    { "id": "female", "label": "Female" },
+                    { "id": "male", "label": "Male" },
+                    { "id": "other", "label": "Other" }
+                ]
+            }
+        },
+        {
+            "template_id": "address",
+            "title": "Address",
+            "field": {
+                "key": "address",
+                "label": "Address",
+                "widget": "long_text",
+                "required": false,
+                "enabled": true,
+                "optionSource": "static",
+                "options": []
+            }
+        },
+        {
+            "template_id": "pincode",
+            "title": "PINCODE",
+            "field": {
+                "key": "pincode",
+                "label": "PINCODE",
+                "widget": "text",
+                "required": false,
+                "enabled": true,
+                "optionSource": "static",
+                "options": []
+            }
+        },
+        {
+            "template_id": "photo",
+            "title": "Photo",
+            "field": {
+                "key": "photo",
+                "label": "Photo",
+                "widget": "photo",
+                "required": false,
+                "enabled": true,
+                "optionSource": "static",
+                "options": []
+            }
+        },
+        {
+            "template_id": "document",
+            "title": "Document",
+            "field": {
+                "key": "document",
+                "label": "Document",
+                "widget": "document",
+                "required": false,
+                "enabled": true,
+                "optionSource": "static",
+                "options": []
+            }
+        },
+        {
+            "template_id": "place",
+            "title": "Place",
+            "field": {
+                "key": "place",
+                "label": "Place",
+                "widget": "geo",
+                "required": false,
+                "enabled": true,
+                "optionSource": "static",
+                "options": []
+            }
+        },
+        {
+            "template_id": "heading",
+            "title": "Heading",
+            "field": {
+                "key": "heading",
+                "label": "Heading",
+                "widget": "heading",
+                "required": false,
+                "enabled": true,
+                "optionSource": "static",
+                "options": []
+            }
+        },
+        {
+            "template_id": "yes_no",
+            "title": "Yes / no",
+            "field": {
+                "key": "yes_no",
+                "label": "Yes / no",
+                "widget": "yes_no",
+                "required": false,
+                "enabled": true,
+                "optionSource": "static",
+                "options": []
+            }
+        },
+        {
+            "template_id": "number",
+            "title": "Number",
+            "field": {
+                "key": "number",
+                "label": "Number",
+                "widget": "number",
+                "required": false,
+                "enabled": true,
+                "optionSource": "static",
+                "options": []
+            }
+        },
+        {
+            "template_id": "long_text",
+            "title": "Long text",
+            "field": {
+                "key": "long_text",
+                "label": "Long text",
+                "widget": "long_text",
+                "required": false,
+                "enabled": true,
+                "optionSource": "static",
+                "options": []
+            }
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "entity_name": "rbac_catalog",
+    "rows": [
+        {
+            "resource": "form",
+            "actions": ["create", "update", "publish"]
+        },
+        {
+            "resource": "form_location",
+            "actions": ["create", "update", "delete"]
+        }
+    ]
+}
